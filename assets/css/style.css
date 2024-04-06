@@ -1,0 +1,94 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--OffBlack);
+}
+
+/* Estilos Generales */
+h1, h2{
+    margin: 0;
+}
+
+.social-links-card {
+    width: 100%;
+    max-width: 325px;
+    background-color: var(--DarkGrey);
+    padding: 1.5em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-card__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__img {
+    max-height: 100px;
+    border-radius: 50%;
+}
+.header__title {
+    color: var(--White);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.header__subtitle {
+    color: var(--Green);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.header__phrase {
+    color: var(--White);
+    font-size: 14px;
+}
+.social-links-card__main {
+    width: 100%;
+}
+.main__buttons-list {
+    list-style: none;
+    padding: 0;
+}
+.buttons__list_items {
+    margin-bottom: 20px;
+}
+.buttons {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--Grey);
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.buttons:hover{
+    background-color: var(--Green);
+    color: var(--OffBlack);
+}
